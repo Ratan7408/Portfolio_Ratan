@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+    #skills-img {
+      height: 120px;
+      width: 120px;
+    }
+
+    #Skills {
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    #skill-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #sp {
+      margin-top: 1rem;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Oswald", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="flex-col justify-center items-center" id="Skills">
+    <div class="mx-auto w-full md:w-3/4 px-4">
+
+      <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+        <h2 class="text-dark mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]"
+          style="text-decoration: underline; font-family: Rowdies, sans-serif; font-weight: 700;">
+          Skills
+        </h2>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center justify-around mb-4" style="margin: 1rem;">
+        <a id="frontendBtn" href="#_"
+          class="flex-grow flex items-center justify-center relative px-5 py-3 overflow-hidden font-medium text-gray-600 shadow-inner group">
+          <span
+            class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+          <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease"
+            id="skill-span">Frontend</span>
+        </a>
+
+        <a id="backendBtn" href="#_"
+          class="flex-grow flex items-center justify-center relative px-5 py-3 overflow-hidden font-medium text-gray-600 shadow-inner group">
+          <span
+            class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+          <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease"
+            id="skill-span">Backend</span>
+        </a>
+
+        <a id="othersBtn" href="#_"
+          class="flex-grow flex items-center justify-center relative px-5 py-3 overflow-hidden font-medium text-gray-600 shadow-inner group">
+          <span
+            class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+          <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease"
+            id="skill-span">Others</span>
+        </a>
+      </div>
+
+      <div id="frontendGrid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 animate-tile">
+        <!-- Frontend skills grid content -->
+        <div class="border rounded-md p-4" id="skill-div"><img src="html.png" alt="" id="skills-img"><span
+            id="sp">HTML</span></div>
+        <div class="border rounded-md p-4" id="skill-div"><img src="css.png" alt="" id="skills-img"><span
+            id="sp">CSS</span></div>
+        <div class="border rounded-md p-4" id="skill-div"><img src="js.png" alt="" id="skills-img"><span
+            id="sp">JavaScript</span></div>
+        <div class="border rounded-md p-4" id="skill-div"><img src="tailwind.png" alt="" id="skills-img"><span
+            id="sp">TailWind</span></div>
+        <div class="border rounded-md p-4" id="skill-div"><img src="bootstrap.png" alt=""
+            style="width: 110px; height: 110px;" id="skills-img"><span id="sp">Bootstrap</span></div>
+        <div class="border rounded-md p-4" id="skill-div"><img src="react.png" alt="" id="skills-img"><span
+            id="sp">React</span></div>
+        <div class="border rounded-md p-4" id="skill-div"><img src="vue.png" alt="" id="skills-img"><span
+            id="sp">Vue.js</span></div>
+        <div class="border rounded-md p-4" id="skill-div"><img src="next.png" alt=""
+            style="width: 110px; height: 110px;" id="skills-img"><span id="sp">NextJS</span></div>
+        <!-- Add other frontend skills here -->
+      </div>
+
+      <div id="backendGrid" class="grid hidden grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 animate-tile">
+        <!-- Backend skills grid content -->
+        <div class="border p-4" id="skill-div"><img src="java.png" alt="" id="skills-img"><span id="sp">Java</span>
+        </div>
+        <div class="border p-4" id="skill-div"><img src="php.png" alt="" style="width: 110px; height: 110px;"
+            id="skills-img">
+          <span id="sp">PHP</span>
+        </div>
+        <div class="border p-4" id="skill-div"><img src="mysql.png" alt="" id="skills-img"><span id="sp">MySQL</span>
+        </div>
+        <div class="border p-4" id="skill-div"><img src="mongodb.png" alt="" id="skills-img"><span
+            id="sp">MongoDB</span></div>
+        <div class="border p-4" id="skill-div"><img src="python.png" alt="" id="skills-img"><span id="sp">Python</span>
+        </div>
+        <div class="border p-4" id="skill-div"><img src="firebase.png" alt="" style="width: 110px; height: 110px;"
+            id="skills-img"><span id="sp">Firebase</span>
+        </div>
+        <!-- Add other backend skills here -->
+      </div>
+
+      <div id="othersGrid" class="grid hidden grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 animate-tile">
+        <!-- Other skills grid content -->
+
+        <div class="border p-4" id="skill-div"><img src="git.png" alt="" style="width: 110px; height: 110px;"
+            id="skills-img"><span id="sp">Git</span>
+        </div>
+        <div class="border p-4" id="skill-div"><img src="r.png" alt="" style="width: 110px; height: 110px;"
+            id="skills-img"><span id="sp">R
+            Programming</span></div>
+        <div class="border p-4" id="skill-div"><img src="matlab.png" alt="" id="skills-img"><span id="sp">MATLAB</span>
+        </div>
+        <!-- Add other other skills here -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const frontendBtn = document.getElementById("frontendBtn");
+    const backendBtn = document.getElementById("backendBtn");
+    const othersBtn = document.getElementById("othersBtn");
+
+    const frontendGrid = document.getElementById("frontendGrid");
+    const backendGrid = document.getElementById("backendGrid");
+    const othersGrid = document.getElementById("othersGrid");
+
+    frontendBtn.addEventListener("click", function () {
+      frontendGrid.classList.remove("hidden");
+      backendGrid.classList.add("hidden");
+      othersGrid.classList.add("hidden");
+      frontendGrid.classList.add("animate-tile");
+      backendGrid.classList.remove("animate-tile");
+      othersGrid.classList.remove("animate-tile");
+    });
+
+    backendBtn.addEventListener("click", function () {
+      frontendGrid.classList.add("hidden");
+      backendGrid.classList.remove("hidden");
+      othersGrid.classList.add("hidden");
+      frontendGrid.classList.remove("animate-tile");
+      backendGrid.classList.add("animate-tile");
+      othersGrid.classList.remove("animate-tile");
+    });
+
+    othersBtn.addEventListener("click", function () {
+      frontendGrid.classList.add("hidden");
+      backendGrid.classList.add("hidden");
+      othersGrid.classList.remove("hidden");
+      frontendGrid.classList.remove("animate-tile");
+      backendGrid.classList.remove("animate-tile");
+      othersGrid.classList.add("animate-tile");
+    });
+  </script>
+</body>
+
+</html>
